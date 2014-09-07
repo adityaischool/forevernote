@@ -1,0 +1,49 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>note_page</title>
+        <link rel="stylesheet" type="text/css" href="forevernote_style.css"/> 
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){
+            $("#friends_nav").click(function() {
+                                  $('#note_shell').attr('src', "/process/{{eachname['fname']}}");
+
+
+            });
+          });
+        </script>
+        
+    </head>
+    <body>
+        <div class="header_bar">
+            <div id="site_logo"></div>
+        </div>
+        
+        <div class="side_bar">
+               
+            <div id="friends_header">Friends</div>
+            
+            <div></div>
+            
+            <iframe id="friends_nav" src="friends_render.html">
+                
+                <!-- <button type="button" class="friend_button">
+                    Friend 1
+                </button> -->
+                
+            </iframe>
+
+        </div>
+        
+        
+        <div>
+            <iframe id="note_shell" src="tester.html"></iframe>          
+        </div>
+        
+        <div class="footer">
+            <span id="footer_text">Copyright 2014 Forevernote, all rights reserved.</span>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,14 @@
+--
+
+
+table lists -- all friends - each friend has a shared notebook
+at login -- entries will list all friends
+
+when you click on a friend
+
+it searches for all notebooks shared by that friend with you
+
+browse through each note in notebook--
+
+display
+
